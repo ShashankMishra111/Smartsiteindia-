@@ -1,245 +1,515 @@
+<!-- PREMIUM RESTAURANT WEBSITE -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SmartSiteIndia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoyalFlame Restaurant</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+  <style>
 
-body{
-  background:#0b1120;
-  color:white;
-  overflow-x:hidden;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
+    }
 
-/* NAV */
-nav{
-  position:fixed;
-  width:100%;
-  top:0;
-  background:rgba(0,0,0,0.4);
-  backdrop-filter:blur(12px);
-  display:flex;
-  justify-content:space-between;
-  padding:15px 40px;
-  z-index:1000;
-}
+    body{
+      background:#0b0b0b;
+      color:white;
+    }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 12px;
-}
+    /* NAVBAR */
 
-/* HERO */
-.hero{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  background:radial-gradient(circle at top,#2563eb,#000);
-}
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+      background:rgba(0,0,0,0.45);
+      backdrop-filter:blur(10px);
+    }
 
-.hero h1{
-  font-size:3rem;
-  max-width:700px;
-  animation:fadeUp 1s ease;
-}
+    .logo{
+      font-size:32px;
+      font-weight:700;
+      color:#d4af37;
+      letter-spacing:2px;
+    }
 
-.hero p{
-  margin-top:10px;
-  opacity:0.8;
-}
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:35px;
+    }
 
-.btn{
-  margin-top:20px;
-  padding:14px 30px;
-  border-radius:30px;
-  background:linear-gradient(45deg,#3b82f6,#8b5cf6);
-  color:white;
-  text-decoration:none;
-  transition:0.3s;
-}
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+      font-weight:500;
+    }
 
-.btn:hover{
-  transform:scale(1.08);
-}
+    nav ul li a:hover{
+      color:#d4af37;
+    }
 
-/* SECTION */
-section{
-  padding:100px 40px;
-}
+    /* HERO */
 
-/* CARDS */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
-}
+    header{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
 
-.card{
-  background:rgba(255,255,255,0.05);
-  padding:30px;
-  border-radius:20px;
-  backdrop-filter:blur(20px);
-  transition:0.4s;
-}
+    .hero{
+      max-width:850px;
+    }
 
-.card:hover{
-  transform:translateY(-15px);
-  box-shadow:0 20px 50px rgba(0,0,0,0.5);
-}
+    .hero h1{
+      font-size:75px;
+      margin-bottom:20px;
+      color:#fff;
+    }
 
-/* PRICING */
-.price{
-  font-size:28px;
-  color:#60a5fa;
-}
+    .hero span{
+      color:#d4af37;
+    }
 
-/* CONTACT */
-input,textarea{
-  width:100%;
-  padding:12px;
-  margin:10px 0;
-  border:none;
-  border-radius:6px;
-}
+    .hero p{
+      font-size:20px;
+      line-height:1.8;
+      margin-bottom:35px;
+      color:#ddd;
+    }
 
-button{
-  padding:12px 25px;
-  background:#3b82f6;
-  border:none;
-  color:white;
-  border-radius:6px;
-}
+    .btn{
+      padding:16px 40px;
+      background:#d4af37;
+      border:none;
+      border-radius:40px;
+      color:black;
+      font-size:18px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.4s;
+    }
 
-/* SCROLL ANIMATION */
-.hidden{
-  opacity:0;
-  transform:translateY(50px);
-  transition:all 1s;
-}
+    .btn:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 30px rgba(212,175,55,0.4);
+    }
 
-.show{
-  opacity:1;
-  transform:translateY(0);
-}
+    section{
+      padding:100px 8%;
+    }
 
-/* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  padding:15px;
-  border-radius:50%;
-}
+    .title{
+      text-align:center;
+      font-size:45px;
+      margin-bottom:60px;
+      color:#d4af37;
+    }
 
-/* KEYFRAME */
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(40px);}
-  to{opacity:1;transform:translateY(0);}
-}
-</style>
+    /* MENU */
+
+    .menu-category{
+      margin-bottom:80px;
+    }
+
+    .category-title{
+      font-size:32px;
+      margin-bottom:35px;
+      color:white;
+      border-left:5px solid #d4af37;
+      padding-left:15px;
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .menu-card{
+      background:#151515;
+      border-radius:22px;
+      overflow:hidden;
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .menu-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .menu-card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:22px;
+    }
+
+    .content h3{
+      font-size:24px;
+      margin-bottom:10px;
+    }
+
+    .content p{
+      color:#bbb;
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .price{
+      margin-top:18px;
+      color:#d4af37;
+      font-size:24px;
+      font-weight:600;
+    }
+
+    /* ABOUT */
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:25px;
+    }
+
+    .about h2{
+      font-size:40px;
+      margin-bottom:20px;
+    }
+
+    .about p{
+      color:#ccc;
+      line-height:1.9;
+      font-size:17px;
+    }
+
+    /* CONTACT */
+
+    .contact-box{
+      background:#151515;
+      padding:50px;
+      border-radius:25px;
+      text-align:center;
+    }
+
+    .contact-box p{
+      margin:15px 0;
+      font-size:18px;
+      color:#ddd;
+    }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:25px;
+      color:#aaa;
+      font-size:15px;
+    }
+
+    @media(max-width:768px){
+
+      nav ul{
+        display:none;
+      }
+
+      .hero h1{
+        font-size:48px;
+      }
+
+      .hero p{
+        font-size:17px;
+      }
+
+      .title{
+        font-size:35px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <h2>SmartSiteIndia</h2>
-  <div>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+  <!-- NAVBAR -->
 
-<div class="hero">
-  <h1>We Build Smart Websites That Grow Your Business 🚀</h1>
-  <p>Modern • Fast • Affordable</p>
-  <a href="#contact" class="btn">Start Your Project</a>
-</div>
+  <nav>
+    <div class="logo">ROYALFLAME</div>
 
-<section class="hidden" id="services">
-  <h2>Our Services</h2>
-  <div class="cards">
-    <div class="card">Website Development</div>
-    <div class="card">eCommerce Store</div>
-    <div class="card">WhatsApp Automation</div>
-    <div class="card">SEO Optimization</div>
-  </div>
-</section>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<section class="hidden" id="pricing">
-  <h2>Pricing</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Basic</h3>
-      <p class="price">₹3,999</p>
-      <p>3–5 Pages</p>
-      <p>SEO</p>
+  <!-- HERO -->
+
+  <header>
+
+    <div class="hero">
+
+      <h1>Luxury Dining <span>Experience</span></h1>
+
+      <p>
+        Discover handcrafted dishes, signature beverages,
+        premium ambience, and unforgettable taste made
+        by world-class chefs.
+      </p>
+
+      <button class="btn">Reserve Table</button>
+
     </div>
-    <div class="card">
-      <h3>eCommerce</h3>
-      <p class="price">₹6,999</p>
-      <p>20 Products</p>
-      <p>Payment + WhatsApp</p>
+
+  </header>
+
+  <!-- MENU -->
+
+  <section id="menu">
+
+    <h2 class="title">Our Premium Menu</h2>
+
+    <!-- STARTERS -->
+
+    <div class="menu-category">
+
+      <h3 class="category-title">Starters</h3>
+
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Garlic Bread Supreme</h3>
+            <p>Crispy artisan bread loaded with garlic butter and cheese.</p>
+            <div class="price">₹299</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Chicken Wings</h3>
+            <p>Spicy glazed wings served with creamy dip.</p>
+            <div class="price">₹449</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1625944524160-39c7b1ffb2e0?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Paneer Tikka</h3>
+            <p>Smoky grilled cottage cheese with rich spices.</p>
+            <div class="price">₹399</div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="card">
-      <h3>Premium</h3>
-      <p class="price">₹9,999</p>
-      <p>Unlimited Pages</p>
-      <p>Advanced Design</p>
+
+    <!-- MAIN COURSE -->
+
+    <div class="menu-category">
+
+      <h3 class="category-title">Main Course</h3>
+
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Italian Cheese Pizza</h3>
+            <p>Stone baked pizza topped with imported mozzarella.</p>
+            <div class="price">₹699</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Royal Beef Burger</h3>
+            <p>Premium grilled patty layered with cheddar cheese.</p>
+            <div class="price">₹549</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Grilled Chicken Steak</h3>
+            <p>Juicy steak served with mashed potatoes and sauce.</p>
+            <div class="price">₹899</div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-  </div>
 
-  <p style="margin-top:20px;">➕ Product Upload: ₹23</p>
-  <p>🔄 Maintenance: ₹699/month</p>
-</section>
+    <!-- BEVERAGES -->
 
-<section class="hidden">
-  <h2>Why Choose Us</h2>
-  <div class="cards">
-    <div class="card">Fast Delivery</div>
-    <div class="card">Affordable Pricing</div>
-    <div class="card">Modern Design</div>
-  </div>
-</section>
+    <div class="menu-category">
 
-<section class="hidden" id="contact">
-  <h2>Contact Us</h2>
+      <h3 class="category-title">Beverages</h3>
 
-  <form action="https://formspree.io/f/xnjwzawj"method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="tel" name="phone" placeholder="Phone" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+      <div class="menu-grid">
 
-  <p>📞 7289971983</p>
-  <p>📧 smartsiteindia11@gmail.com</p>
-</section>
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Cold Coffee</h3>
+            <p>Rich creamy cold coffee with chocolate drizzle.</p>
+            <div class="price">₹249</div>
+          </div>
+        </div>
 
-<a href="https://wa.me/917289971983?text=Hi%20SmartSiteIndia%2C%20I%20want%20a%20website" target="_blank" class="whatsapp">💬</a>
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Berry Mocktail</h3>
+            <p>Refreshing mix of berries, mint and sparkling soda.</p>
+            <div class="price">₹349</div>
+          </div>
+        </div>
 
-<script>
-const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  });
-});
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Fresh Mojito</h3>
+            <p>Classic mint mojito with lemon and crushed ice.</p>
+            <div class="price">₹299</div>
+          </div>
+        </div>
 
-document.querySelectorAll('.hidden').forEach(el=>observer.observe(el));
-</script>
+      </div>
+
+    </div>
+
+    <!-- DESSERTS -->
+
+    <div class="menu-category">
+
+      <h3 class="category-title">Desserts</h3>
+
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Chocolate Lava Cake</h3>
+            <p>Warm chocolate cake with melting center.</p>
+            <div class="price">₹399</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Premium Ice Cream</h3>
+            <p>Luxury vanilla and chocolate fusion dessert.</p>
+            <div class="price">₹299</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop">
+          <div class="content">
+            <h3>Strawberry Cheesecake</h3>
+            <p>Soft creamy cheesecake topped with fresh berries.</p>
+            <div class="price">₹499</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="title">About RoyalFlame</h2>
+
+    <div class="about">
+
+      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1400&auto=format&fit=crop">
+
+      <div>
+
+        <h2>Fine Dining Redefined</h2>
+
+        <p>
+          RoyalFlame combines elegant interiors,
+          premium quality ingredients, and world-class
+          culinary artistry to deliver an unforgettable
+          dining experience.
+          <br><br>
+          Our chefs craft every dish with perfection,
+          bringing luxury taste and modern presentation
+          together.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact-box">
+
+      <p>📍 Connaught Place, New Delhi</p>
+      <p>📞 +91 9876543210</p>
+      <p>✉ royalflame@email.com</p>
+      <p>🕒 Open Daily: 11 AM - 12 AM</p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 RoyalFlame Restaurant | Designed with Luxury
+  </footer>
 
 </body>
 </html>
