@@ -1,14 +1,13 @@
-  <!-- PREMIUM RESTAURANT WEBSITE -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RoyalFlame Restaurant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LUXORA SALON</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
 
@@ -21,7 +20,7 @@
     }
 
     body{
-      background:#0b0b0b;
+      background:#0c0c0c;
       color:white;
     }
 
@@ -35,15 +34,15 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-      z-index:1000;
       background:rgba(0,0,0,0.45);
       backdrop-filter:blur(10px);
+      z-index:1000;
     }
 
     .logo{
       font-size:32px;
-      font-weight:700;
-      color:#d4af37;
+      font-weight:800;
+      color:#ff4fa3;
       letter-spacing:2px;
     }
 
@@ -61,18 +60,21 @@
     }
 
     nav ul li a:hover{
-      color:#d4af37;
+      color:#ff4fa3;
     }
 
     /* HERO */
 
     header{
       height:100vh;
+
       background:
-      linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),
-      url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop');
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1600&auto=format&fit=crop');
+
       background-size:cover;
       background-position:center;
+
       display:flex;
       justify-content:center;
       align-items:center;
@@ -86,27 +88,27 @@
 
     .hero h1{
       font-size:75px;
+      font-weight:800;
       margin-bottom:20px;
-      color:#fff;
     }
 
     .hero span{
-      color:#d4af37;
+      color:#ff4fa3;
     }
 
     .hero p{
       font-size:20px;
       line-height:1.8;
-      margin-bottom:35px;
       color:#ddd;
+      margin-bottom:35px;
     }
 
     .btn{
-      padding:16px 40px;
-      background:#d4af37;
+      padding:16px 42px;
       border:none;
       border-radius:40px;
-      color:black;
+      background:#ff4fa3;
+      color:white;
       font-size:18px;
       font-weight:600;
       cursor:pointer;
@@ -115,7 +117,7 @@
 
     .btn:hover{
       transform:translateY(-5px);
-      box-shadow:0 10px 30px rgba(212,175,55,0.4);
+      box-shadow:0 10px 30px rgba(255,79,163,0.4);
     }
 
     section{
@@ -126,67 +128,68 @@
       text-align:center;
       font-size:45px;
       margin-bottom:60px;
-      color:#d4af37;
+      color:#ff4fa3;
     }
 
-    /* MENU */
+    /* CARDS */
 
-    .menu-category{
-      margin-bottom:80px;
-    }
-
-    .category-title{
-      font-size:32px;
-      margin-bottom:35px;
-      color:white;
-      border-left:5px solid #d4af37;
-      padding-left:15px;
-    }
-
-    .menu-grid{
+    .grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
       gap:30px;
     }
 
-    .menu-card{
-      background:#151515;
-      border-radius:22px;
+    .card{
+      background:#141414;
+      border-radius:25px;
       overflow:hidden;
       transition:0.4s;
       border:1px solid rgba(255,255,255,0.08);
     }
 
-    .menu-card:hover{
+    .card:hover{
       transform:translateY(-10px);
-      box-shadow:0 20px 40px rgba(0,0,0,0.4);
+      box-shadow:0 20px 40px rgba(0,0,0,0.5);
     }
 
-    .menu-card img{
+    .card img{
       width:100%;
-      height:240px;
+      height:250px;
       object-fit:cover;
     }
 
     .content{
-      padding:22px;
+      padding:25px;
     }
 
     .content h3{
-      font-size:24px;
-      margin-bottom:10px;
+      font-size:25px;
+      margin-bottom:12px;
     }
 
     .content p{
       color:#bbb;
-      line-height:1.7;
+      line-height:1.8;
       font-size:15px;
     }
 
     .price{
-      margin-top:18px;
-      color:#d4af37;
+      color:#ff4fa3;
+      margin-top:15px;
       font-size:24px;
+      font-weight:700;
+    }
+
+    /* STYLISTS */
+
+    .stylist img{
+      height:340px;
+    }
+
+    .stylist-name{
+      color:#ff4fa3;
+      margin-top:10px;
+      font-size:22px;
       font-weight:600;
     }
 
@@ -205,7 +208,7 @@
     }
 
     .about h2{
-      font-size:40px;
+      font-size:42px;
       margin-bottom:20px;
     }
 
@@ -218,7 +221,7 @@
     /* CONTACT */
 
     .contact-box{
-      background:#151515;
+      background:#141414;
       padding:50px;
       border-radius:25px;
       text-align:center;
@@ -226,12 +229,12 @@
 
     .contact-box p{
       margin:15px 0;
-      font-size:18px;
       color:#ddd;
+      font-size:18px;
     }
 
     footer{
-      background:#000;
+      background:black;
       text-align:center;
       padding:25px;
       color:#aaa;
@@ -255,9 +258,11 @@
       .title{
         font-size:35px;
       }
+
     }
 
   </style>
+
 </head>
 
 <body>
@@ -265,14 +270,17 @@
   <!-- NAVBAR -->
 
   <nav>
-    <div class="logo">ROYALFLAME</div>
+
+    <div class="logo">LUXORA</div>
 
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#stylists">Stylists</a></li>
+      <li><a href="#pricing">Pricing</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
   </nav>
 
   <!-- HERO -->
@@ -281,176 +289,275 @@
 
     <div class="hero">
 
-      <h1>Luxury Dining <span>Experience</span></h1>
+      <h1>Luxury Hair & <span>Beauty Studio</span></h1>
 
       <p>
-        Discover handcrafted dishes, signature beverages,
-        premium ambience, and unforgettable taste made
-        by world-class chefs.
+        Experience premium salon services with expert stylists,
+        luxury ambience, advanced skincare, hair treatments,
+        and beauty solutions tailored for you.
       </p>
 
-      <button class="btn">Reserve Table</button>
+      <button class="btn">Book Appointment</button>
 
     </div>
 
   </header>
 
-  <!-- MENU -->
+  <!-- SERVICES -->
 
-  <section id="menu">
+  <section id="services">
 
-    <h2 class="title">Our Premium Menu</h2>
+    <h2 class="title">Our Premium Services</h2>
 
-    <!-- STARTERS -->
+    <div class="grid">
 
-    <div class="menu-category">
+      <div class="card">
 
-      <h3 class="category-title">Starters</h3>
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop">
 
-      <div class="menu-grid">
+        <div class="content">
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Garlic Bread Supreme</h3>
-            <p>Crispy artisan bread loaded with garlic butter and cheese.</p>
-            <div class="price">₹299</div>
-          </div>
+          <h3>Hair Styling</h3>
+
+          <p>
+            Trendy haircuts and premium styling
+            for modern and elegant looks.
+          </p>
+
+          <div class="price">₹799</div>
+
         </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Chicken Wings</h3>
-            <p>Spicy glazed wings served with creamy dip.</p>
-            <div class="price">₹449</div>
-          </div>
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <h3>Makeup Artist</h3>
+
+          <p>
+            Professional party, bridal and luxury
+            makeup services for every occasion.
+          </p>
+
+          <div class="price">₹2499</div>
+
         </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1625944524160-39c7b1ffb2e0?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Paneer Tikka</h3>
-            <p>Smoky grilled cottage cheese with rich spices.</p>
-            <div class="price">₹399</div>
-          </div>
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <h3>Hair Spa</h3>
+
+          <p>
+            Deep nourishing hair spa for smooth,
+            shiny and healthy hair.
+          </p>
+
+          <div class="price">₹1499</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <h3>Facial Treatment</h3>
+
+          <p>
+            Premium facial therapies for glowing,
+            hydrated and refreshed skin.
+          </p>
+
+          <div class="price">₹1999</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <h3>Manicure & Pedicure</h3>
+
+          <p>
+            Luxury nail care and spa treatment
+            for soft and beautiful hands & feet.
+          </p>
+
+          <div class="price">₹999</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <h3>Hair Coloring</h3>
+
+          <p>
+            Global coloring, highlights and
+            premium hair transformation services.
+          </p>
+
+          <div class="price">₹3499</div>
+
         </div>
 
       </div>
 
     </div>
 
-    <!-- MAIN COURSE -->
+  </section>
 
-    <div class="menu-category">
+  <!-- STYLISTS -->
 
-      <h3 class="category-title">Main Course</h3>
+  <section id="stylists">
 
-      <div class="menu-grid">
+    <h2 class="title">Expert Stylists</h2>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Italian Cheese Pizza</h3>
-            <p>Stone baked pizza topped with imported mozzarella.</p>
-            <div class="price">₹699</div>
-          </div>
+    <div class="grid">
+
+      <div class="card stylist">
+
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <div class="stylist-name">Ananya Kapoor</div>
+
+          <p>
+            Celebrity hairstylist specializing
+            in modern luxury hair transformations.
+          </p>
+
         </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Royal Beef Burger</h3>
-            <p>Premium grilled patty layered with cheddar cheese.</p>
-            <div class="price">₹549</div>
-          </div>
+      </div>
+
+      <div class="card stylist">
+
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <div class="stylist-name">Rohit Mehra</div>
+
+          <p>
+            Professional grooming and styling
+            expert with 10+ years experience.
+          </p>
+
         </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Grilled Chicken Steak</h3>
-            <p>Juicy steak served with mashed potatoes and sauce.</p>
-            <div class="price">₹899</div>
-          </div>
+      </div>
+
+      <div class="card stylist">
+
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <div class="stylist-name">Priya Sharma</div>
+
+          <p>
+            Bridal makeup artist creating
+            elegant and glamorous beauty looks.
+          </p>
+
         </div>
 
       </div>
 
     </div>
 
-    <!-- BEVERAGES -->
+  </section>
 
-    <div class="menu-category">
+  <!-- PRICING -->
 
-      <h3 class="category-title">Beverages</h3>
+  <section id="pricing">
 
-      <div class="menu-grid">
+    <h2 class="title">Membership Plans</h2>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Cold Coffee</h3>
-            <p>Rich creamy cold coffee with chocolate drizzle.</p>
-            <div class="price">₹249</div>
-          </div>
-        </div>
+    <div class="grid">
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Berry Mocktail</h3>
-            <p>Refreshing mix of berries, mint and sparkling soda.</p>
-            <div class="price">₹349</div>
-          </div>
-        </div>
+      <div class="card">
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Fresh Mojito</h3>
-            <p>Classic mint mojito with lemon and crushed ice.</p>
-            <div class="price">₹299</div>
-          </div>
+        <div class="content">
+
+          <h3>Basic Care</h3>
+
+          <div class="price">₹1999</div>
+
+          <p>2 Haircuts / Month</p>
+          <p>Basic Hair Spa</p>
+          <p>Priority Booking</p>
+
+          <br>
+
+          <button class="btn">Choose Plan</button>
+
         </div>
 
       </div>
 
-    </div>
+      <div class="card">
 
-    <!-- DESSERTS -->
+        <div class="content">
 
-    <div class="menu-category">
+          <h3>Premium Beauty</h3>
 
-      <h3 class="category-title">Desserts</h3>
+          <div class="price">₹4999</div>
 
-      <div class="menu-grid">
+          <p>Unlimited Haircuts</p>
+          <p>Luxury Facial</p>
+          <p>Hair Spa & Styling</p>
+          <p>Premium Products</p>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Chocolate Lava Cake</h3>
-            <p>Warm chocolate cake with melting center.</p>
-            <div class="price">₹399</div>
-          </div>
+          <br>
+
+          <button class="btn">Choose Plan</button>
+
         </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Premium Ice Cream</h3>
-            <p>Luxury vanilla and chocolate fusion dessert.</p>
-            <div class="price">₹299</div>
-          </div>
-        </div>
+      </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Strawberry Cheesecake</h3>
-            <p>Soft creamy cheesecake topped with fresh berries.</p>
-            <div class="price">₹499</div>
-          </div>
+      <div class="card">
+
+        <div class="content">
+
+          <h3>Royal Bridal</h3>
+
+          <div class="price">₹14999</div>
+
+          <p>Bridal Makeup</p>
+          <p>Hair Styling</p>
+          <p>Luxury Facial</p>
+          <p>Complete Beauty Package</p>
+
+          <br>
+
+          <button class="btn">Choose Plan</button>
+
         </div>
 
       </div>
@@ -461,27 +568,30 @@
 
   <!-- ABOUT -->
 
-  <section id="about">
+  <section>
 
-    <h2 class="title">About RoyalFlame</h2>
+    <h2 class="title">About Luxora</h2>
 
     <div class="about">
 
-      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1400&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1400&auto=format&fit=crop">
 
       <div>
 
-        <h2>Fine Dining Redefined</h2>
+        <h2>Premium Beauty Experience</h2>
 
         <p>
-          RoyalFlame combines elegant interiors,
-          premium quality ingredients, and world-class
-          culinary artistry to deliver an unforgettable
-          dining experience.
+
+          Luxora Salon combines elegance, luxury,
+          and professional beauty expertise to deliver
+          world-class salon experiences.
           <br><br>
-          Our chefs craft every dish with perfection,
-          bringing luxury taste and modern presentation
-          together.
+
+          From hair transformations to bridal makeup
+          and skincare treatments, we provide premium
+          beauty services with top-quality products
+          and expert stylists.
+
         </p>
 
       </div>
@@ -500,15 +610,17 @@
 
       <p>📍 Connaught Place, New Delhi</p>
       <p>📞 +91 9876543210</p>
-      <p>✉ royalflame@email.com</p>
-      <p>🕒 Open Daily: 11 AM - 12 AM</p>
+      <p>✉ luxorasalon@email.com</p>
+      <p>🕒 Open Daily: 10 AM - 9 PM</p>
 
     </div>
 
   </section>
 
   <footer>
-    © 2026 RoyalFlame Restaurant | Designed with Luxury
+
+    © 2026 Luxora Salon | Premium Beauty Studio
+
   </footer>
 
 </body>
