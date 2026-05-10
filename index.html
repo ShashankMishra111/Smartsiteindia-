@@ -1,14 +1,13 @@
-<!-- PREMIUM RESTAURANT WEBSITE -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RoyalFlame Restaurant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IRON PULSE FITNESS</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
 
@@ -35,15 +34,15 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-      z-index:1000;
       background:rgba(0,0,0,0.45);
       backdrop-filter:blur(10px);
+      z-index:1000;
     }
 
     .logo{
       font-size:32px;
-      font-weight:700;
-      color:#d4af37;
+      font-weight:800;
+      color:#ff3c00;
       letter-spacing:2px;
     }
 
@@ -61,7 +60,7 @@
     }
 
     nav ul li a:hover{
-      color:#d4af37;
+      color:#ff3c00;
     }
 
     /* HERO */
@@ -69,10 +68,12 @@
     header{
       height:100vh;
       background:
-      linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),
-      url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop');
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop');
+
       background-size:cover;
       background-position:center;
+
       display:flex;
       justify-content:center;
       align-items:center;
@@ -81,41 +82,41 @@
     }
 
     .hero{
-      max-width:850px;
+      max-width:900px;
     }
 
     .hero h1{
       font-size:75px;
       margin-bottom:20px;
-      color:#fff;
+      font-weight:800;
     }
 
     .hero span{
-      color:#d4af37;
+      color:#ff3c00;
     }
 
     .hero p{
-      font-size:20px;
-      line-height:1.8;
-      margin-bottom:35px;
       color:#ddd;
+      line-height:1.8;
+      font-size:20px;
+      margin-bottom:35px;
     }
 
     .btn{
-      padding:16px 40px;
-      background:#d4af37;
+      padding:16px 42px;
       border:none;
-      border-radius:40px;
-      color:black;
+      background:#ff3c00;
+      color:white;
       font-size:18px;
-      font-weight:600;
+      border-radius:40px;
       cursor:pointer;
+      font-weight:600;
       transition:0.4s;
     }
 
     .btn:hover{
       transform:translateY(-5px);
-      box-shadow:0 10px 30px rgba(212,175,55,0.4);
+      box-shadow:0 10px 30px rgba(255,60,0,0.4);
     }
 
     section{
@@ -126,68 +127,100 @@
       text-align:center;
       font-size:45px;
       margin-bottom:60px;
-      color:#d4af37;
+      color:#ff3c00;
     }
 
-    /* MENU */
+    /* SERVICES */
 
-    .menu-category{
-      margin-bottom:80px;
-    }
-
-    .category-title{
-      font-size:32px;
-      margin-bottom:35px;
-      color:white;
-      border-left:5px solid #d4af37;
-      padding-left:15px;
-    }
-
-    .menu-grid{
+    .grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
       gap:30px;
     }
 
-    .menu-card{
-      background:#151515;
-      border-radius:22px;
+    .card{
+      background:#141414;
+      border-radius:25px;
       overflow:hidden;
       transition:0.4s;
       border:1px solid rgba(255,255,255,0.08);
     }
 
-    .menu-card:hover{
+    .card:hover{
       transform:translateY(-10px);
-      box-shadow:0 20px 40px rgba(0,0,0,0.4);
+      box-shadow:0 20px 40px rgba(0,0,0,0.5);
     }
 
-    .menu-card img{
+    .card img{
       width:100%;
       height:240px;
       object-fit:cover;
     }
 
     .content{
-      padding:22px;
+      padding:25px;
     }
 
     .content h3{
-      font-size:24px;
-      margin-bottom:10px;
+      font-size:26px;
+      margin-bottom:12px;
     }
 
     .content p{
       color:#bbb;
-      line-height:1.7;
+      line-height:1.8;
       font-size:15px;
     }
 
-    .price{
-      margin-top:18px;
-      color:#d4af37;
-      font-size:24px;
+    /* TRAINERS */
+
+    .trainer-card img{
+      height:350px;
+    }
+
+    .trainer-name{
+      color:#ff3c00;
+      margin-top:10px;
+      font-size:22px;
       font-weight:600;
+    }
+
+    /* MEMBERSHIP */
+
+    .pricing{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .price-card{
+      background:#141414;
+      padding:40px;
+      border-radius:25px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.4s;
+    }
+
+    .price-card:hover{
+      transform:scale(1.04);
+    }
+
+    .price-card h3{
+      font-size:30px;
+      margin-bottom:20px;
+    }
+
+    .price{
+      font-size:50px;
+      color:#ff3c00;
+      margin-bottom:20px;
+      font-weight:700;
+    }
+
+    .price-card p{
+      color:#bbb;
+      margin:12px 0;
     }
 
     /* ABOUT */
@@ -205,7 +238,7 @@
     }
 
     .about h2{
-      font-size:40px;
+      font-size:42px;
       margin-bottom:20px;
     }
 
@@ -218,7 +251,7 @@
     /* CONTACT */
 
     .contact-box{
-      background:#151515;
+      background:#141414;
       padding:50px;
       border-radius:25px;
       text-align:center;
@@ -226,14 +259,14 @@
 
     .contact-box p{
       margin:15px 0;
-      font-size:18px;
       color:#ddd;
+      font-size:18px;
     }
 
     footer{
-      background:#000;
-      text-align:center;
+      background:black;
       padding:25px;
+      text-align:center;
       color:#aaa;
       font-size:15px;
     }
@@ -255,9 +288,11 @@
       .title{
         font-size:35px;
       }
+
     }
 
   </style>
+
 </head>
 
 <body>
@@ -265,14 +300,17 @@
   <!-- NAVBAR -->
 
   <nav>
-    <div class="logo">ROYALFLAME</div>
+
+    <div class="logo">IRON PULSE</div>
 
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#workouts">Exercises</a></li>
+      <li><a href="#trainers">Trainers</a></li>
+      <li><a href="#plans">Membership</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
   </nav>
 
   <!-- HERO -->
@@ -281,177 +319,217 @@
 
     <div class="hero">
 
-      <h1>Luxury Dining <span>Experience</span></h1>
+      <h1>Transform Your <span>Body & Mind</span></h1>
 
       <p>
-        Discover handcrafted dishes, signature beverages,
-        premium ambience, and unforgettable taste made
-        by world-class chefs.
+        Premium fitness experience with advanced equipment,
+        certified trainers, strength programs, cardio workouts,
+        and luxury gym ambience.
       </p>
 
-      <button class="btn">Reserve Table</button>
+      <button class="btn">Join Now</button>
 
     </div>
 
   </header>
 
-  <!-- MENU -->
+  <!-- EXERCISES -->
 
-  <section id="menu">
+  <section id="workouts">
 
-    <h2 class="title">Our Premium Menu</h2>
+    <h2 class="title">Workout Programs</h2>
 
-    <!-- STARTERS -->
+    <div class="grid">
 
-    <div class="menu-category">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop">
+        <div class="content">
+          <h3>Weight Training</h3>
+          <p>
+            Build strength and muscle with professional
+            weight lifting programs and modern equipment.
+          </p>
+        </div>
+      </div>
 
-      <h3 class="category-title">Starters</h3>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop">
+        <div class="content">
+          <h3>Cardio Training</h3>
+          <p>
+            High intensity cardio sessions for stamina,
+            fat loss, and heart health improvement.
+          </p>
+        </div>
+      </div>
 
-      <div class="menu-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517837016564-bfc5e1f6e7d0?q=80&w=1200&auto=format&fit=crop">
+        <div class="content">
+          <h3>CrossFit</h3>
+          <p>
+            Intense full-body functional workouts
+            designed for power and endurance.
+          </p>
+        </div>
+      </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Garlic Bread Supreme</h3>
-            <p>Crispy artisan bread loaded with garlic butter and cheese.</p>
-            <div class="price">₹299</div>
-          </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop">
+        <div class="content">
+          <h3>Yoga Sessions</h3>
+          <p>
+            Improve flexibility, posture and mental
+            peace through guided yoga classes.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?q=80&w=1200&auto=format&fit=crop">
+        <div class="content">
+          <h3>Fat Loss Program</h3>
+          <p>
+            Custom calorie-burning workouts with
+            trainer supervision and nutrition plans.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1200&auto=format&fit=crop">
+        <div class="content">
+          <h3>Bodybuilding</h3>
+          <p>
+            Professional bodybuilding routines for
+            maximum muscle growth and definition.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TRAINERS -->
+
+  <section id="trainers">
+
+    <h2 class="title">Expert Trainers</h2>
+
+    <div class="grid">
+
+      <div class="card trainer-card">
+
+        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <div class="trainer-name">Rahul Verma</div>
+
+          <p>
+            Certified strength coach with 8+ years
+            experience in muscle building and fitness.
+          </p>
+
         </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Chicken Wings</h3>
-            <p>Spicy glazed wings served with creamy dip.</p>
-            <div class="price">₹449</div>
-          </div>
+      </div>
+
+      <div class="card trainer-card">
+
+        <img src="https://images.unsplash.com/photo-1549476464-37392f717541?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <div class="trainer-name">Aman Khanna</div>
+
+          <p>
+            CrossFit specialist helping clients
+            improve endurance and athletic performance.
+          </p>
+
         </div>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1625944524160-39c7b1ffb2e0?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Paneer Tikka</h3>
-            <p>Smoky grilled cottage cheese with rich spices.</p>
-            <div class="price">₹399</div>
-          </div>
+      </div>
+
+      <div class="card trainer-card">
+
+        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="content">
+
+          <div class="trainer-name">Priya Sharma</div>
+
+          <p>
+            Yoga and flexibility expert focused on
+            wellness, posture and mobility training.
+          </p>
+
         </div>
 
       </div>
 
     </div>
 
-    <!-- MAIN COURSE -->
+  </section>
 
-    <div class="menu-category">
+  <!-- MEMBERSHIP -->
 
-      <h3 class="category-title">Main Course</h3>
+  <section id="plans">
 
-      <div class="menu-grid">
+    <h2 class="title">Membership Plans</h2>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Italian Cheese Pizza</h3>
-            <p>Stone baked pizza topped with imported mozzarella.</p>
-            <div class="price">₹699</div>
-          </div>
-        </div>
+    <div class="pricing">
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Royal Beef Burger</h3>
-            <p>Premium grilled patty layered with cheddar cheese.</p>
-            <div class="price">₹549</div>
-          </div>
-        </div>
+      <div class="price-card">
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Grilled Chicken Steak</h3>
-            <p>Juicy steak served with mashed potatoes and sauce.</p>
-            <div class="price">₹899</div>
-          </div>
-        </div>
+        <h3>Basic</h3>
+
+        <div class="price">₹999</div>
+
+        <p>Gym Access</p>
+        <p>Cardio Area</p>
+        <p>Locker Facility</p>
+        <p>Free WiFi</p>
+
+        <br>
+
+        <button class="btn">Choose Plan</button>
 
       </div>
 
-    </div>
+      <div class="price-card">
 
-    <!-- BEVERAGES -->
+        <h3>Premium</h3>
 
-    <div class="menu-category">
+        <div class="price">₹1999</div>
 
-      <h3 class="category-title">Beverages</h3>
+        <p>All Basic Features</p>
+        <p>Personal Trainer</p>
+        <p>Diet Plan</p>
+        <p>Steam & Sauna</p>
 
-      <div class="menu-grid">
+        <br>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Cold Coffee</h3>
-            <p>Rich creamy cold coffee with chocolate drizzle.</p>
-            <div class="price">₹249</div>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Berry Mocktail</h3>
-            <p>Refreshing mix of berries, mint and sparkling soda.</p>
-            <div class="price">₹349</div>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Fresh Mojito</h3>
-            <p>Classic mint mojito with lemon and crushed ice.</p>
-            <div class="price">₹299</div>
-          </div>
-        </div>
+        <button class="btn">Choose Plan</button>
 
       </div>
 
-    </div>
+      <div class="price-card">
 
-    <!-- DESSERTS -->
+        <h3>Elite</h3>
 
-    <div class="menu-category">
+        <div class="price">₹3499</div>
 
-      <h3 class="category-title">Desserts</h3>
+        <p>Unlimited Access</p>
+        <p>VIP Training</p>
+        <p>Custom Workout Plan</p>
+        <p>Nutrition Guidance</p>
 
-      <div class="menu-grid">
+        <br>
 
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Chocolate Lava Cake</h3>
-            <p>Warm chocolate cake with melting center.</p>
-            <div class="price">₹399</div>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Premium Ice Cream</h3>
-            <p>Luxury vanilla and chocolate fusion dessert.</p>
-            <div class="price">₹299</div>
-          </div>
-        </div>
-
-        <div class="menu-card">
-          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop">
-          <div class="content">
-            <h3>Strawberry Cheesecake</h3>
-            <p>Soft creamy cheesecake topped with fresh berries.</p>
-            <div class="price">₹499</div>
-          </div>
-        </div>
+        <button class="btn">Choose Plan</button>
 
       </div>
 
@@ -461,27 +539,27 @@
 
   <!-- ABOUT -->
 
-  <section id="about">
+  <section>
 
-    <h2 class="title">About RoyalFlame</h2>
+    <h2 class="title">About Iron Pulse</h2>
 
     <div class="about">
 
-      <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1400&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1400&auto=format&fit=crop">
 
       <div>
 
-        <h2>Fine Dining Redefined</h2>
+        <h2>Premium Fitness Experience</h2>
 
         <p>
-          RoyalFlame combines elegant interiors,
-          premium quality ingredients, and world-class
-          culinary artistry to deliver an unforgettable
-          dining experience.
+
+          Iron Pulse is designed for people who want
+          world-class fitness facilities, premium ambience,
+          expert trainers, and transformational workout programs.
           <br><br>
-          Our chefs craft every dish with perfection,
-          bringing luxury taste and modern presentation
-          together.
+          From strength training to yoga and advanced bodybuilding,
+          we provide complete fitness solutions under one roof.
+
         </p>
 
       </div>
@@ -500,15 +578,17 @@
 
       <p>📍 Connaught Place, New Delhi</p>
       <p>📞 +91 9876543210</p>
-      <p>✉ royalflame@email.com</p>
-      <p>🕒 Open Daily: 11 AM - 12 AM</p>
+      <p>✉ ironpulse@email.com</p>
+      <p>🕒 Open Daily: 5 AM - 11 PM</p>
 
     </div>
 
   </section>
 
   <footer>
-    © 2026 RoyalFlame Restaurant | Designed with Luxury
+
+    © 2026 Iron Pulse Fitness | Premium Gym Website
+
   </footer>
 
 </body>
